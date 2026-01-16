@@ -1,1 +1,4 @@
 ggml-medium.bin
+node_modules
+bin 
+models

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTT Transcriber</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">RTT Transcriber</div>
+        <div id="status" class="status">Idle</div>
+      </div>
+      <button id="toggleBtn" class="toggle">Start (Alt+I)</button>
+      <div class="log" id="log"></div>
+      <div class="hint">Clipboard + auto-paste via xdotool</div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "rtt-speech-app",
+  "version": "0.1.0",
+  "description": "Tray-based real-time transcription app using whisper.cpp",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.aggerio.rtt-transcriber",
+    "productName": "RTTTranscriber",
+    "files": [
+      "src/**",
+      "package.json",
+      "assets/**"
+    ],
+    "extraResources": [
+      {
+        "from": "bin/whisper-cli",
+        "to": "bin/whisper-cli"
+      },
+      {
+        "from": "models/ggml-medium.bin",
+        "to": "models/ggml-medium.bin"
+      }
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Audio",
+      "artifactName": "${productName}-${version}-${arch}.AppImage"
+    }
+  }
+}
