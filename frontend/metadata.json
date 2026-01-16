@@ -1,0 +1,5 @@
+{
+  "name": "RTT Speech App",
+  "description": "A high-performance real-time transcription desktop application using Electron and Whisper.cpp.",
+  "requestFramePermissions": []
+}
