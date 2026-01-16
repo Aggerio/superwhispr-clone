@@ -15,7 +15,7 @@ CHUNK_SIZE = int(SR * CHUNK_SEC)
 OVERLAP_SIZE = int(SR * OVERLAP_SEC)
 
 # Whisper parameters
-WHISPER_BIN = "./build/bin/whisper-cli"
+WHISPER_BIN = "./whisper-cli"
 MODEL_PATH = "./models/ggml-base.en.bin"
 WHISPER_CMD_TEMPLATE = [
     WHISPER_BIN,
